@@ -59,6 +59,11 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        success: "hsl(var(--success))",
+      },
+      fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        display: ['Poppins', 'Inter', 'system-ui', 'sans-serif'],
       },
       borderRadius: {
         lg: "var(--radius)",
