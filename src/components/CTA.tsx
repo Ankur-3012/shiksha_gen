@@ -4,11 +4,11 @@ import { Download, Smartphone, CheckCircle, Bell, Mail, Star } from "lucide-reac
 
 const CTA = () => {
   const features = [
-    "Free AI question generation",
+    "AI question generation with coins",
     "Smart summary creation", 
     "Personal question bank",
-    "Offline study mode",
-    "Progress tracking & analytics"
+    "Daily coin rewards (3 coins/day)",
+    "Coin store for additional credits"
   ];
 
   return (
@@ -32,19 +32,19 @@ const CTA = () => {
                     <span className="text-sm font-semibold">Coming Soon</span>
                   </div>
                   <h2 className="text-4xl lg:text-5xl font-display font-bold text-foreground mb-6">
-                    Ready to Transform Your 
-                    <span className="text-gradient block mt-2">Learning Journey?</span>
+                    Ready to Earn Your
+                    <span className="text-gradient block mt-2">Daily Coins?</span>
                   </h2>
                   <p className="text-xl text-muted-foreground mb-10 leading-relaxed">
-                    Join thousands of students already using ShikshaGen to ace their studies. 
-                    Be the first to experience the future of AI-powered learning.
+                    Join thousands of students who get 3 daily coins to power their AI learning journey. 
+                    Start studying smarter with our coin-based credit system.
                   </p>
                 </div>
 
                 <div className="space-y-6 fade-in-delay-1">
                   <Button size="lg" className="w-full lg:w-auto hero-gradient shadow-feature hover-lift text-lg px-10 py-4 rounded-2xl font-semibold group">
                     <Bell className="w-6 h-6 mr-3 group-hover:scale-110 transition-transform" />
-                    Notify Me When Ready
+                    Get Your Daily Coins
                   </Button>
                   <div className="flex items-center justify-center lg:justify-start gap-4 text-sm text-muted-foreground">
                     <div className="flex items-center gap-2">
@@ -96,9 +96,9 @@ const CTA = () => {
 
                 <div className="mt-12 p-6 rounded-2xl glass-effect fade-in-delay-3">
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-primary font-display mb-2">100% Free</div>
+                    <div className="text-3xl font-bold text-primary font-display mb-2">3 Daily Coins</div>
                     <p className="text-muted-foreground">
-                      No hidden costs, no subscriptions. Just pure AI-powered learning.
+                      Sign in daily to earn coins. Buy more from our coin store when needed.
                     </p>
                   </div>
                 </div>

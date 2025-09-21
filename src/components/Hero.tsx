@@ -37,14 +37,14 @@ const Hero = () => {
             
             <p className="text-2xl text-muted-foreground mb-10 max-w-2xl leading-relaxed fade-in-delay-2 font-medium">
               Transform your study sessions with AI-powered practice questions, 
-              smart summaries, and personalized question banks for 
-              <span className="text-primary font-semibold"> faster revision</span>.
+              smart summaries, and personalized question banks. 
+              <span className="text-primary font-semibold"> Get 3 coins daily or buy more from our coin store</span>.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center lg:justify-start fade-in-delay-3 mb-12">
               <Button size="lg" className="hero-gradient shadow-hero hover-lift text-lg px-8 py-4 rounded-2xl font-semibold">
                 <BookOpen className="w-6 h-6 mr-3" />
-                Start Learning Free
+                Get Your Daily Coins
               </Button>
               <Button variant="outline" size="lg" className="border-2 border-primary text-primary hover:bg-primary/5 text-lg px-8 py-4 rounded-2xl font-semibold hover-scale">
                 <Brain className="w-6 h-6 mr-3" />
