@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Sparkles, Brain, BookOpen, Star, Users, Award } from "lucide-react";
 import heroImage from "@/assets/hero-app-interface.png";
+import logoImage from "@/assets/shiksha-gen-logo.jpg";
 
 const Hero = () => {
   return (
@@ -21,11 +22,18 @@ const Hero = () => {
               <span className="text-sm font-medium">AI-Powered Learning Revolution</span>
             </div>
             
-            <h1 className="text-6xl lg:text-7xl font-display font-black mb-8 fade-in-delay-1 leading-tight">
-              <span className="text-gradient">
-                ShikshaGen
-              </span>
-            </h1>
+            <div className="flex items-center justify-center lg:justify-start mb-8 fade-in-delay-1">
+              <img 
+                src={logoImage} 
+                alt="ShikshaGen Logo" 
+                className="w-20 h-20 mr-4"
+              />
+              <h1 className="text-6xl lg:text-7xl font-display font-black leading-tight">
+                <span className="text-gradient">
+                  ShikshaGen
+                </span>
+              </h1>
+            </div>
             
             <p className="text-2xl text-muted-foreground mb-10 max-w-2xl leading-relaxed fade-in-delay-2 font-medium">
               Transform your study sessions with AI-powered practice questions, 
