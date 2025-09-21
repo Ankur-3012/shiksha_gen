@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Sparkles, Brain, BookOpen, Star, Users, Award } from "lucide-react";
-import heroImage from "@/assets/hero-phone.jpg";
+import heroImage from "@/assets/hero-app-interface.png";
 
 const Hero = () => {
   return (
