@@ -79,12 +79,12 @@ const Hero = () => {
           
           {/* Hero Image */}
           <div className="relative fade-in-up-delay-1">
-            <div className="relative mx-auto max-w-md lg:max-w-lg">
+            <div className="relative mx-auto max-w-xs lg:max-w-sm">
               <div className="relative">
                 <img 
                   src={heroImage} 
                   alt="ShikshaGen AI Learning App Interface"
-                  className="w-full h-auto rounded-3xl shadow-hero hover-lift"
+                  className="w-4/5 h-auto mx-auto rounded-3xl shadow-hero hover-lift"
                 />
                 <div className="absolute inset-0 rounded-3xl bg-gradient-to-t from-primary/10 to-transparent"></div>
               </div>
