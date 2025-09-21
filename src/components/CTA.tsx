@@ -49,7 +49,7 @@ const CTA = () => {
                   <div className="flex items-center justify-center lg:justify-start gap-4 text-sm text-muted-foreground">
                     <div className="flex items-center gap-2">
                       <Smartphone className="w-4 h-4 text-primary" />
-                      <span>Available on Android</span>
+                      <span>Coming soon on Android</span>
                     </div>
                     <div className="w-1 h-1 bg-muted-foreground rounded-full"></div>
                     <div className="flex items-center gap-2">
