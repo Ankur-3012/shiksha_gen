@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
+import { supabase } from "@/integrations/supabase/client";
 import {
   Dialog,
   DialogContent,
@@ -64,16 +65,33 @@ export const BetaSignupDialog = () => {
   });
 
   const onSubmit = async (data: FormValues) => {
-    // TODO: Store data in database once backend is connected
-    console.log("Beta signup data:", data);
-    
-    toast({
-      title: "Thanks for signing up!",
-      description: "We'll contact you soon about the beta program.",
-    });
-    
-    form.reset();
-    setOpen(false);
+    try {
+      const { data: response, error } = await supabase.functions.invoke('beta-signup', {
+        body: {
+          firstName: data.firstName,
+          lastName: data.lastName,
+          email: data.email,
+          phone: data.phone,
+        }
+      });
+
+      if (error) throw error;
+
+      toast({
+        title: "Thanks for signing up!",
+        description: "We'll contact you soon about the beta program.",
+      });
+      
+      form.reset();
+      setOpen(false);
+    } catch (error: any) {
+      console.error("Beta signup error:", error);
+      toast({
+        title: "Something went wrong",
+        description: "Please try again later or contact support.",
+        variant: "destructive",
+      });
+    }
   };
 
   return (
