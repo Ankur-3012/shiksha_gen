@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Download, Smartphone, CheckCircle, Bell, Mail, Star } from "lucide-react";
+import { Download, Smartphone, CheckCircle, Bell, Star } from "lucide-react";
+import { BetaSignupDialog } from "./BetaSignupDialog";
 
 const CTA = () => {
   const features = [
@@ -63,10 +64,7 @@ const CTA = () => {
                   <p className="text-muted-foreground mb-6 text-lg">
                     Want to be part of our beta program?
                   </p>
-                  <Button variant="outline" size="lg" className="border-2 border-primary text-primary hover:bg-primary/5 rounded-2xl px-8 py-3 font-semibold hover-scale">
-                    <Mail className="w-5 h-5 mr-2" />
-                    Join Beta Program
-                  </Button>
+                  <BetaSignupDialog />
                 </div>
               </div>
 
